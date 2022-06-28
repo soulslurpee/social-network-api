@@ -1,5 +1,5 @@
-const { kMaxLength } = require('buffer');
 const { Schema, model, Types } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const ThoughtsSchema = new Schema(
   {
@@ -12,8 +12,8 @@ const ThoughtsSchema = new Schema(
 
     createdAt: {
       type: Date,
-      default: Date.now
-      //get: date formatter
+      default: Date.now,
+      get: createdAtVal => dateFormat(createdAtVal)
     },
 
     username: {
