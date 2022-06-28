@@ -1,4 +1,22 @@
 {
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "simple social network api",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulslurpee/social-network-api.git"
+  },
+  "author": "Charlie Thompson (soulslurpee)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soulslurpee/social-network-api/issues"
+  },
+  "homepage": "https://github.com/soulslurpee/social-network-api#readme",
   "dependencies": {
     "express": "^4.18.1",
     "mongodb": "^4.7.0",
