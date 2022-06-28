@@ -1,5 +1,4 @@
 const Thoughts = require('../models');
-const { update } = require('../models/Thoughts');
 
 const thoughtsController = {
 
